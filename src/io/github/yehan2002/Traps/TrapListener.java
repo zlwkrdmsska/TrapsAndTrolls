@@ -44,7 +44,17 @@ public class TrapListener implements Listener {
             e.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.POISON, 100, 1));
             e.setCancelled(true);
         } else if (e.getTrap() == TrapManager.Launch) {
-            e.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 20, 10), false);
+            try {
+                e.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 20, 10), false);
+            }catch (NoSuchFieldError error){
+               new BukkitRunnable(){
+                   @Override
+                   public void run(){
+                       e.getPlayer().teleport(e.getPlayer().getLocation().add(0, 10, 0));
+                   }
+               }.runTaskLater(plugin, 5);
+
+            }
             e.setCancelled(true);
         } else if (e.getTrap() == TrapManager.TNT) {
             e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.PRIMED_TNT);
@@ -79,13 +89,17 @@ public class TrapListener implements Listener {
 
     private void HerobrineTroll(TrapTriggeredEvent e){
         Location l = e.getPlayer().getLocation();
-
         e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.ENTITY_ENDERDRAGON_AMBIENT, 1, 5);
 
 
         l.add(2, 0, 0);
         Creeper c = (Creeper) e.getPlayer().getWorld().spawnEntity(l, EntityType.CREEPER);
-        c.setExplosionRadius(0);
+        try {
+            c.setExplosionRadius(0);
+        } catch (NoSuchMethodError methodError){
+            c.remove();
+            return;
+        }
         c.setPowered(true);
         c.setTarget(e.getPlayer());
         c.setMaxFuseTicks(40);
@@ -117,9 +131,16 @@ public class TrapListener implements Listener {
 
     }
 
+    @SuppressWarnings( "deprecation" )
     private void ThiefTrap(TrapTriggeredEvent e) {
         Player p = e.getPlayer();
-        if (p.getInventory().getItemInMainHand().getType() == Material.AIR | p.getInventory().getItemInMainHand().getType() == Material.WRITTEN_BOOK) {
+        ItemStack handItem;
+        try {
+            handItem = p.getInventory().getItemInMainHand();
+        } catch (NoSuchMethodError methodError) {
+            handItem = p.getInventory().getItemInHand();
+        }
+        if (handItem.getType() == Material.AIR | handItem.getType() == Material.WRITTEN_BOOK) {
             return;
         }
         Location l = p.getLocation();
@@ -129,7 +150,7 @@ public class TrapListener implements Listener {
 
         Chest c = (Chest) block.getState();
 
-        c.getBlockInventory().addItem(p.getInventory().getItemInMainHand());
+        c.getBlockInventory().addItem(handItem);
 
         ItemStack writtenBook = new ItemStack(Material.WRITTEN_BOOK);
         BookMeta bookMeta = (BookMeta) writtenBook.getItemMeta();
@@ -138,7 +159,11 @@ public class TrapListener implements Listener {
         bookMeta.setPages("X: " + l.getBlockX() + "\nY: " + l.getBlockY() + "\nZ: " + l.getBlockZ());
         writtenBook.setItemMeta(bookMeta);
 
-        p.getInventory().setItemInMainHand(writtenBook);
+        try {
+            p.getInventory().setItemInMainHand(writtenBook);
+        }catch (NoSuchMethodError methodError){
+            p.getInventory().setItemInHand(writtenBook);
+        }
     }
 
     private void LavaTrap(TrapTriggeredEvent e) {
@@ -262,7 +287,13 @@ public class TrapListener implements Listener {
         for (int i = 0; i < 256; i++) {
             Item Drop = e.getPlayer().getWorld().dropItemNaturally(e.getPlayer().getLocation().add(0, 1, 0), new ItemStack(Material.DIAMOND));
             Drop.setPickupDelay(1000);
-            Drop.setInvulnerable(true);
+
+            try {
+                Drop.setInvulnerable(true);
+            } catch (NoSuchMethodError methodError){
+                // spigot 1.8
+            }
+
             drops.add(Drop);
         }
         new BukkitRunnable() {
