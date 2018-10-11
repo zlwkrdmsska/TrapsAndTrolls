@@ -1,0 +1,7 @@
+name: Trap
+main: io.github.yehan2002.Traps.Main
+version: 1.0beta
+commands:
+  trap:
+    description: Traps and Trolls
+    usage: /trap help
