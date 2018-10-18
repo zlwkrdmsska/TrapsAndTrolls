@@ -82,6 +82,10 @@ public class EventListener implements Listener{
                     trap = trap.split("#")[0];
                 }
 
+                if (p.hasPermission("trapsAndTrolls.exempt") & Command.excluded.contains(p)){
+                    return;
+                }
+
                 TrapTriggeredEvent event = new TrapTriggeredEvent(p, TrapManager.valueOf(trap), Custom);
 
                 Bukkit.getServer().getPluginManager().callEvent(event);

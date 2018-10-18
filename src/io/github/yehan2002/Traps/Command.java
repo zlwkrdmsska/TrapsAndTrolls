@@ -9,10 +9,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
+
 public class Command implements CommandExecutor {
 
     private Economy econ;
     TrapShop trapShop;
+    public static ArrayList<Player> excluded = new ArrayList<>();
 
     Command(JavaPlugin plugin){
         setupEconomy(plugin);
@@ -42,15 +45,23 @@ public class Command implements CommandExecutor {
                 p.sendMessage(ChatColor.GOLD + "                Traps & Trolls            ");
                 p.sendMessage(ChatColor.DARK_AQUA + "-----------                -----------");
                 p.sendMessage("");
-                p.sendMessage(ChatColor.DARK_GREEN + "Created by " + ChatColor.GREEN + "yj22k");
-                p.sendMessage(ChatColor.GREEN + "Website : http://www.github.com/yehan2002");
+
+                p.sendMessage(ChatColor.DARK_GREEN + "Created by " + ChatColor.GREEN + "yj22k (http://bit.do/eySHt)");
                 p.sendMessage("");
                 p.sendMessage(ChatColor.GREEN + "Commands:");
-                p.sendMessage("/trap shop");
-                p.sendMessage("/trap help");
+                p.sendMessage(ChatColor.GOLD + "/trap shop -"+ ChatColor.GREEN + " Open player shop.");
+                p.sendMessage(ChatColor.GOLD + "/trap god -"+ ChatColor.GREEN + " Excludes the player from traps.");
+                p.sendMessage(ChatColor.GOLD + "/trap help -" + ChatColor.GREEN + " Display this message.");
             }
             if (args.length == 1 && args[0].equalsIgnoreCase("shop")){
                 trapShop.openInventory(p);
+
+            } else if (args.length == 1 && args[0].equalsIgnoreCase("god")){
+                if (p.hasPermission("trapAandTrolls.exempt")) {
+                    excluded.add(p);
+                } else {
+                    p.sendMessage(ChatColor.DARK_RED + "You do not have permission to do this");
+                }
             }
             return true;
         }

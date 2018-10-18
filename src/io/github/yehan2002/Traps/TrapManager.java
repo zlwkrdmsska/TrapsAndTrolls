@@ -58,7 +58,7 @@ public enum TrapManager {
                 return TrapManager.Herobrine;
             case "Creative Mode Troll":
                 return TrapManager.Creative;
-            case "Fake Op troll":
+            case "Fake Op Troll":
                 return TrapManager.Op;
 
 

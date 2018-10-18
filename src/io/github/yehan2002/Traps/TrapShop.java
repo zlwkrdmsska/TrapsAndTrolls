@@ -11,6 +11,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.potion.PotionEffectType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,8 +24,10 @@ public class TrapShop implements Listener {
 
     TrapShop(Economy econ){
         this.econ = econ;
+        this.registerDefault();
         int num = (int) (Math.ceil(TrapManager.trapList.size() / 9F) * 9);
         inv = Bukkit.createInventory(null, num, ChatColor.GREEN + "Trap Shop");
+
     }
 
     void initializeItems() {
@@ -47,6 +50,29 @@ public class TrapShop implements Listener {
 
     void openInventory(Player p) {
         p.openInventory(inv);
+    }
+
+    private void registerDefault(){
+        TrapManager.registerTrap("Fire Trap", "Sets the enemy on Fire", 1000);
+        TrapManager.registerTrap("Fake Diamond Troll", "Spawns a diamond that can't be picked up.", 1000);
+        TrapManager.registerTrap("Poison Trap", "Poisons the player", 1500);
+
+        if (PotionEffectType.getByName("GLOWING") != null) {
+            TrapManager.registerTrap("Glow Trap", "Makes the Player Glow like a beacon", 1500);
+            TrapManager.registerTrap("Herobrine Troll", "A Herobrine Jump-scare.", 2000);
+        } else {
+            Bukkit.getLogger().info("Disabled Glow Trap, Herobrine Troll due to old version of Spigot.");
+        }
+
+        TrapManager.registerTrap("Creative Mode Troll", "Fake Creative mode.", 2000);
+        TrapManager.registerTrap("Fake Op Troll", "Fake Op", 2000);
+        TrapManager.registerTrap("Launch Trap", "Sends the player flying!!", 2500);
+        TrapManager.registerTrap("TNT Trap", "Summons Primed TNT", 5000);
+        TrapManager.registerTrap("Lightning Trap", "Summons a Lightning bolt", 7500);
+        TrapManager.registerTrap("Thief Trap", "Steals the item the player is holding", 10000);
+        TrapManager.registerTrap("Lava Trap", "Slowly sends the player into lava.", 20000);
+        TrapManager.registerTrap("Cage Trap", "Traps the player in a cage", 25000);
+
     }
 
     @SuppressWarnings("unused")
