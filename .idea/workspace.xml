@@ -46,6 +46,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
+          <entry key="gitignore" value="1" />
           <entry key="gradle" value="2" />
           <entry key="java" value="38" />
           <entry key="yml" value="2" />
@@ -56,6 +57,7 @@
           <entry key="CLASS" value="6" />
           <entry key="Groovy" value="2" />
           <entry key="JAVA" value="38" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -63,6 +65,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="dummy" value="7" />
+          <entry key="gitignore" value="6" />
           <entry key="java" value="12409" />
           <entry key="yml" value="365" />
         </counts>
@@ -71,7 +74,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="12409" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="YAML" value="365" />
         </counts>
       </usages-collector>
@@ -135,15 +138,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="205">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setupEconomy#0;class#Command#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -231,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/EventListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/Command.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -277,7 +290,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/yehan/IdeaProjects/Trap/src/io/github/yehan2002/Traps/TrapManager.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539842865334" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539843134182" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -593,12 +606,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="205">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setupEconomy#0;class#Command#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
