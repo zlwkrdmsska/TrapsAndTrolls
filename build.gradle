@@ -5,13 +5,26 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 
 group = 'io.github.yehan2002.Traps'
-version = '1.0'
+version = "1.4"
 archivesBaseName = 'Traps'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 def bukkitVersion = '1.12.2-R0.1-SNAPSHOT'
+
+def getCheckedOutGitCommitHash() {
+    def gitFolder = "$projectDir/.git/"
+    def takeFromHash = 12
+
+    def head = new File(gitFolder + "HEAD").text.split(":") // .git/HEAD
+    def isCommit = head.length == 1
+
+    if(isCommit) return head[0].trim().take(takeFromHash)
+
+    def refHead = new File(gitFolder + head[1].trim())
+    refHead.text.trim().take takeFromHash
+}
 
 repositories {
     jcenter()
@@ -34,13 +47,7 @@ dependencies {
     compile (group: 'net.milkbowl.vault', name: 'VaultAPI', version: "1.7")
 }
 
-/* This will replace '@VERSION@' in the plugin.yml with the version declared above, just put '@VERSION@' for the version in the plugin.yml */
-processResources {
-    filter ReplaceTokens, tokens: [
-            "VERSION": version
-    ]
-}
-
+version = version + "-SNAPSHOT-" + getCheckedOutGitCommitHash()
 
 compileJava.options.encoding = 'UTF-8'
 
@@ -57,8 +64,6 @@ sourceSets {
             srcDirs 'src'
         }
     }
-
-
 }
 
 
@@ -69,7 +74,23 @@ jar {
     }
     from('src/') {
         include 'plugin.yml'
+        filter(ReplaceTokens, tokens: [VERSION : project.version])
     }
+    doLast {
+        def dir = new File("builds")
+
+        if( !dir.exists() ) {
+            dir.mkdirs()
+        }
+        
+        copy {
+            from 'build/libs/' + project.name + project.version + '.jar'
+            into "builds"
+        }
+    }
+
 }
+
+
 
 
