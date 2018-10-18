@@ -45,17 +45,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
+          <entry key="class" value="10" />
           <entry key="gitignore" value="1" />
-          <entry key="gradle" value="2" />
+          <entry key="gradle" value="3" />
           <entry key="java" value="38" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="Groovy" value="2" />
+          <entry key="CLASS" value="10" />
+          <entry key="Groovy" value="3" />
           <entry key="JAVA" value="38" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="YAML" value="2" />
@@ -66,6 +66,7 @@
           <entry key="class" value="1" />
           <entry key="dummy" value="7" />
           <entry key="gitignore" value="8" />
+          <entry key="gradle" value="38" />
           <entry key="java" value="12409" />
           <entry key="yml" value="365" />
         </counts>
@@ -73,6 +74,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
+          <entry key="Groovy" value="38" />
           <entry key="JAVA" value="12409" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="YAML" value="365" />
@@ -83,117 +85,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapShop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initializeItems#0;class#TrapShop#0" />
-                <element signature="method#createGuiItem#0;class#TrapShop#0" />
-                <element signature="method#registerDefault#0;class#TrapShop#0" />
-                <element signature="method#onInventoryClick#0;class#TrapShop#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/EventListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#EventListener#0;class#EventListener#0" />
-                <element signature="method#PlayerMove#0;class#EventListener#0" />
-                <element signature="method#newTrap#0;class#EventListener#0" />
-                <element signature="method#Unwrap#0;class#EventListener#0" />
-                <element signature="method#getIdentifier#0;class#EventListener#0" />
-                <element signature="method#trapPlace#0;class#EventListener#0" />
-                <element signature="method#blockBreak#0;class#EventListener#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/Command.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setupEconomy#0;class#Command#0" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding>
-                <element signature="method#getTrap#0;class#TrapManager#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onTrap#0;class#TrapListener#0" />
-                <element signature="method#LavaTrap#0;class#TrapListener#0" />
-                <element signature="method#CageTrap#0;class#TrapListener#0" />
-                <element signature="method#CreativeTroll#0;class#TrapListener#0" />
-                <element signature="method#OpTroll#0;class#TrapListener#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapTriggeredEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="157">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -232,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/Traps/TrapListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/custom.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapType.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/EventListner.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/Sqlite.java" />
@@ -244,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/EventListener.java" />
         <option value="$PROJECT_DIR$/src/io/github/yehan2002/Traps/Command.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -272,13 +176,12 @@
             <path>
               <item name="Trap" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Trap" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trap" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Traps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,13 +193,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/yehan/IdeaProjects/Trap/src/io/github/yehan2002/Traps/TrapManager.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539844071155" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539846123690" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -310,23 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (3)">
-    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (2)">
     <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle (2)" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -359,7 +251,7 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle (4)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
@@ -375,17 +267,75 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="/home/yehan/IdeaProjects/Trap/build.gradle [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (2)" />
-      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle" />
-      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (1)" />
       <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (3)" />
+      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (4)" />
+      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar]" />
+      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (1)" />
+      <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (2)" />
+        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar] (1)" />
+        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle [fatJar]" />
+        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (4)" />
         <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (3)" />
-        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle (1)" />
-        <item itemvalue="Gradle./home/yehan/IdeaProjects/Trap/build.gradle" />
       </list>
     </recent_temporary>
   </component>
@@ -404,8 +354,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="507" y="39" width="1396" height="990" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32142857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32142857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,7 +373,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3290993" />
       <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -521,7 +472,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Trap.jar.gradle" />
-    <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/Sqlite.java" />
     <entry file="file://$PROJECT_DIR$/src/io/github/yehan2002/Traps/TrapListener.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -616,8 +566,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.cache/.fr-DEM6eQ/io/github/yehan2002/Traps/TrapListener$6.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.cache/.fr-V8Hw5o/io/github/yehan2002/Traps/TrapListener$5.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.cache/.fr-jqeWp6/io/github/yehan2002/Traps/TrapListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.cache/.fr-Eg6ZXY/io/github/yehan2002/Traps/TrapListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
         </state>
       </provider>
     </entry>
