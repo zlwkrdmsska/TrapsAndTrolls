@@ -18,9 +18,9 @@ cache:
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file_glob: true
-  file: directory/**/*
+  api_key:
+    secure: "fivpN5GY4ZVEgiHwiixf1/3d8clrQ1ZZ4IibpcHBkWK3i4MCGVwNYhdHAziZedHLDyyfeSHfhpFV6OPLl8+55ZztlaRXWJtmif24rZ2itUV/9zAjM1FsSgBRqw64y+02QFg7YAJEGj7vfW4D/r1+zboPLJWH1u/gCwJr5HkzQLBYqYM1+r2fyPB8unGVpXtQg5ww2f3iz1YAU/SMuhwnceSa8QtQl8WfppxqBN3JjC/z//x+/gNZvQOr9Qj3uSP4OR84dm8xCqS7XR9dJLBh8vmpQtnBYrrG6ZhhvwHQy2nBOlIWmwys4BCazmnWJryTUfW1J2gtDaTXxD9w39+qhU7c3x6OWYsqUYDS72ZpPX1uUcWsqVEW/G0xpUOw+OpQPxzqsaQ9AYxPE968eW+IIjFbMW25LI1/L0R1PhWlq6tPuBFOhfgCJzXZxgO7NliehFExM6/T9hUCFpVABwWQOMzsGaio3i0YWtgk0ZSHrMEDw7My0rlvi8UX4QWCUyPLlKLZY6UHKuonW3XbFfwwL64rZpwTU2m7hnLd9x1CMynAuY6LuLApXPTFIi8Onq+rc4gH8dgMDxQl4iHZS8fMSDJRtjGL1Q8kbM9fWNn4Maa7QsMYv0QP97NacMfhhia53Pjl1pVRk+d7GGPuXs8zg4Le07p/SfE5azq4u/67K74="
+  file: $TRAVIS_BUILD_DIR/build/libs/*
   skip_cleanup: true
   on:
     tags: true

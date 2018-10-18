@@ -84,7 +84,7 @@ jar {
         }
         
         copy {
-            from 'build/libs/' + project.name + project.version + '.jar'
+            from 'build/libs/*'
             into "builds"
         }
     }
