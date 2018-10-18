@@ -6,7 +6,7 @@ jdk:
 
 script:
   - ./gradlew build
-  
+
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -19,6 +19,9 @@ cache:
 deploy:
   provider: releases
   api_key:
-    secure: "fivpN5GY4ZVEgiHwiixf1/3d8clrQ1ZZ4IibpcHBkWK3i4MCGVwNYhdHAziZedHLDyyfeSHfhpFV6OPLl8+55ZztlaRXWJtmif24rZ2itUV/9zAjM1FsSgBRqw64y+02QFg7YAJEGj7vfW4D/r1+zboPLJWH1u/gCwJr5HkzQLBYqYM1+r2fyPB8unGVpXtQg5ww2f3iz1YAU/SMuhwnceSa8QtQl8WfppxqBN3JjC/z//x+/gNZvQOr9Qj3uSP4OR84dm8xCqS7XR9dJLBh8vmpQtnBYrrG6ZhhvwHQy2nBOlIWmwys4BCazmnWJryTUfW1J2gtDaTXxD9w39+qhU7c3x6OWYsqUYDS72ZpPX1uUcWsqVEW/G0xpUOw+OpQPxzqsaQ9AYxPE968eW+IIjFbMW25LI1/L0R1PhWlq6tPuBFOhfgCJzXZxgO7NliehFExM6/T9hUCFpVABwWQOMzsGaio3i0YWtgk0ZSHrMEDw7My0rlvi8UX4QWCUyPLlKLZY6UHKuonW3XbFfwwL64rZpwTU2m7hnLd9x1CMynAuY6LuLApXPTFIi8Onq+rc4gH8dgMDxQl4iHZS8fMSDJRtjGL1Q8kbM9fWNn4Maa7QsMYv0QP97NacMfhhia53Pjl1pVRk+d7GGPuXs8zg4Le07p/SfE5azq4u/67K74="
+    secure: "w2sIJcq+ixjOsjXuUVMb3gWZ6VaVhmd4hOqbc4ldvQ7MK0nwcW0NAKYXuSSu/KSLixfrwwVKdYp5fnCHwI8NeKS6CdwMCzO0EldpTmev55cffgddQ8cXUndj5Z63/Pt9hNB8HTcFyFZvV+asVnzkF5qxjl8okY0b/pj3PLSDthbO0gBlQLdSKpmMMhTGZy6sXufhSr0EzujzXzVG5USasX6YY+BCdc8z3ZQSTTMX8x0oACWWW8RY1WzG7laVYQsj3vPKBsMkwi0UgiRs3lIjqGPopd+NAuugLGkzhEf/aehIQHKB33riZ0NqQ5MC+vlrDYTcvosgwEqP2Ofsulh9TmZD8wwm/NMlA4L9MbfhYrMgFDrd/eOp+BtxV9GsHAwEb3i54YWrAXkY22nLp1zxTjaGIaFlFC+FeWx5kjiAdoLUGA7RRorlJKAvOarNheXdn+8O1i3tUFUG+sCIQ7xnJzCpPRxR0E5AEFStzJeGpP6m6GbJvTvjGaBYfpfmqXCSCbtDuU+Q0JejE05zQ5f5t0OZK4UrKV3v2kmvf492OGz8FTjT038p2ldzgTli6CDI3zqIAhEQp8Gwxamq9gvWsv5Uqdu5eMmTA6pKyRDPeI6yACm6Ww4tCh5ELE6s+iBckdVOnO/0eWUK/xLSUJBJmMXNEgLLhjNunv+cFDY0mQE="
+  file_glob: true
   file: $TRAVIS_BUILD_DIR/build/libs/*.jar
   skip_cleanup: true
+
+  # 6bc265973c3d41f4d6c5f359feccf1110b3256f8
