@@ -197,7 +197,7 @@ public class EventListener implements Listener{
                     }
 
                 } else {
-                    e.setExpToDrop(50);
+                    e.setExpToDrop(1);
                 }
                 config.set(getIdentifier(e.getBlock()),null);
                 saveConfig();
