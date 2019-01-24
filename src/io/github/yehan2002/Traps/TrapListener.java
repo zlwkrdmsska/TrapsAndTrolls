@@ -182,13 +182,13 @@ public class TrapListener implements Listener {
         l.getBlock().setType(Material.WEB);
         l.setY(l.getY() - 1);
         resetList.put(l.clone(), l.getBlock().getType());
-        l.getBlock().setType(Material.LAVA);
-        lava = l.clone();
+        l.getBlock().setType(Material.WEB);
+        WEB = l.clone();
         Runnable noDeath = new BukkitRunnable() {
             @Override
             public void run() {
                 if (p.getHealth() < 5) {
-                    lava.getBlock().setType(Material.MAGMA);
+                    WEB.getBlock().setType(Material.MAGMA);
                     p.setFireTicks(0);
                 }
             }
