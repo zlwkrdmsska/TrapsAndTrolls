@@ -54,7 +54,7 @@ public class TrapShop implements Listener {
 
     private void registerDefault(){
         TrapManager.registerTrap("Fire Trap", "Sets the enemy on Fire", 50);
-        TrapManager.registerTrap("Poison Trap", "Poisons the player", 60);
+        TrapManager.registerTrap("Poison Trap", "Poisons the player", 100);
 
         if (PotionEffectType.getByName("GLOWING") != null) {
             TrapManager.registerTrap("Glow Trap", "Makes the Player Glow like a beacon", 20);
@@ -62,9 +62,9 @@ public class TrapShop implements Listener {
             Bukkit.getLogger().info("Disabled Glow Trap, Herobrine Troll due to old version of Spigot.");
         }
 
-        TrapManager.registerTrap("Launch Trap", "Sends the player flying!!", 80);
-        TrapManager.registerTrap("Lightning Trap", "Summons a Lightning bolt", 200);
-        TrapManager.registerTrap("Lava Trap", "Slowly sends the player into lava.", 2000);
+        TrapManager.registerTrap("Launch Trap", "Sends the player flying!!",90);
+        TrapManager.registerTrap("Lightning Trap", "Summons a Lightning bolt", 250);
+        TrapManager.registerTrap("Lava Trap", "Slowly sends the player into lava.", 5000);
         TrapManager.registerTrap("Cage Trap", "Traps the player in a cage", 350);
 
     }
